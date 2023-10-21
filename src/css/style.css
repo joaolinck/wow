@@ -1,0 +1,131 @@
+body{
+    font-family: 'Metamorphous', serif;
+    overflow: hidden;
+}
+
+main::after{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 80vw;
+    background: linear-gradient(-240deg, #000 38%, rgba(0, 0, 0, 0) 50%) no-repeat;
+}
+
+main .spec{
+    display:none;
+    height: 100vh;
+}
+
+main .spec.active{
+    display: block;
+}
+
+main .spec .image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contents {
+    position: fixed;
+    top: 120px;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    max-width: 450px;
+    z-index: 1;
+}
+
+.contents .class-name{
+    font-size: 48px;
+    margin-bottom: 20px;
+
+}
+
+.contents .description{
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 217, 0, 0.897);
+}
+
+.contents .logo{
+    background-image: url("../images/wow-logo.png");
+    background-size: cover;
+    width: 400px;
+    height: 190px;
+    margin-bottom: 35px;
+    transition: 0.5s ease-in-out;
+}
+
+.contents .logo:hover{
+    transform: scale(1.15);
+}
+
+.buttons{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    background-color:rgba(0, 0, 0, 0.377);
+}
+
+.buttons .button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 95px;
+    width: 95px;
+    transition: 0.3s ease-in-out;
+}
+
+.buttons .button img{
+    border-radius: 50%;
+    height: 95px;
+
+}
+
+.buttons .button.selected{
+    transform: scale(1.25);
+    box-shadow: 0 0 10px 4px rgb(196, 195, 195), inset 0 0 10px 10px rgb(196, 195, 195);
+
+}
+
+.buttons .button:hover{
+    transform: scale(1.25);
+    filter: brightness(1.22);
+}
+
+.buttons .button.selected.warrior{
+    transform: scale(1.25);
+    box-shadow: 0 0 10px 4px #C69B6D, inset 0 0 10px 10px #C69B6D;
+}
+
+.buttons .button.selected.hunter{
+    transform: scale(1.25);
+    box-shadow: 0 0 10px 4px #AAD372, inset 0 0 10px 10px #AAD372;
+}
+
+.buttons .button.selected.paladin{
+    transform: scale(1.25);
+    box-shadow: 0 0 10px 4px #F48CBA, inset 0 0 10px 10px #F48CBA;
+}
+
+.buttons .button.selected.dk{
+    transform: scale(1.25);
+    box-shadow: 0 0 10px 4px #C41E3A, inset 0 0 10px 10px #C41E3A;
+}
+
+.buttons .button.selected.mage{
+    transform: scale(1.25);
+    box-shadow: 0 0 10px 4px #3FC7EB, inset 0 0 10px 10px #3FC7EB;
+}
