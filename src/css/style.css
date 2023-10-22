@@ -14,7 +14,7 @@ main::after{
 }
 
 main .spec{
-    display:none;
+    display: none;
     height: 100vh;
 }
 
@@ -118,6 +118,11 @@ main .spec .image{
 .buttons .button.selected.paladin{
     transform: scale(1.25);
     box-shadow: 0 0 10px 4px #F48CBA, inset 0 0 10px 10px #F48CBA;
+}
+
+.buttons .button.selected.priest{
+    transform: scale(1.25);
+    box-shadow: 0 0 10px 4px #FFFFFF, inset 0 0 10px 10px #FFFFFF;
 }
 
 .buttons .button.selected.dk{
