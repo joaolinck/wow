@@ -83,14 +83,14 @@ main .spec .image{
     background: none;
     cursor: pointer;
     border-radius: 50%;
-    height: 95px;
-    width: 95px;
+    height: 90px;
+    width: 90px;
     transition: 0.3s ease-in-out;
 }
 
 .buttons .button img{
     border-radius: 50%;
-    height: 95px;
+    height: 90px;
 
 }
 
@@ -113,6 +113,11 @@ main .spec .image{
 .buttons .button.selected.hunter{
     transform: scale(1.25);
     box-shadow: 0 0 10px 4px #AAD372, inset 0 0 10px 10px #AAD372;
+}
+
+.buttons .button.selected.rogue{
+    transform: scale(1.25);
+    box-shadow: 0 0 10px 4px #FFF468, inset 0 0 10px 10px #FFF468;
 }
 
 .buttons .button.selected.paladin{
