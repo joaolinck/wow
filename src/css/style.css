@@ -26,6 +26,7 @@ main .spec .image{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    animation: changeImage 0.7s;
 }
 
 .contents {
@@ -138,4 +139,13 @@ main .spec .image{
 .buttons .button.selected.mage{
     transform: scale(1.25);
     box-shadow: 0 0 10px 4px #3FC7EB, inset 0 0 10px 10px #3FC7EB;
+}
+
+@keyframes changeImage{
+    from{
+        opacity: 80%;
+    }
+    to{
+        opacity: 100%;
+    }
 }
