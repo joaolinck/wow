@@ -1,0 +1,32 @@
+@media (max-height: 900px){
+
+    .buttons{
+
+        gap: 15px;
+    }
+}
+
+@media (max-height: 800px){
+
+    .buttons{
+
+        width: 150px;
+    }
+}
+
+@media (max-width: 800px){
+
+    .description{
+        width: 60%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 750px){
+
+    .contents .logo{
+
+        width: 250px;
+        height: 115px;
+    }
+}
